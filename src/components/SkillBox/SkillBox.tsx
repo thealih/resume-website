@@ -13,6 +13,7 @@ const SkillBox = ({ title, count }: Props) => {
   for (let index = 0; index < count; index++) {
     starFillItems.push(
       <Image
+        key={1}
         width={20}
         height={20}
         src={starFill.src}

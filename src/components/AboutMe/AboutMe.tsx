@@ -33,7 +33,7 @@ const AboutMe: FC = () => {
           کنم.
         </p>
       </div>
-      <div className="w-full md:ml-40 lg:pr-40">
+      <div className="w-full md:ml-40 lg:pr-40 hidden md:block">
         <Skillbar title="Next JS" progress={70} />
         <Skillbar title="React JS" progress={90} />
         <Skillbar title="Type script" progress={70} />

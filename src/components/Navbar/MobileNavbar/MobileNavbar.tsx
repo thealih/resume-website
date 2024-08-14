@@ -8,18 +8,18 @@ const MobileNavbar: FC = (allMenus: any) => {
   return (
     <div className="lg:hidden fixed bottom-0 left-0 w-full  bg-white border-t border-gray-200  z-50 pb-6 px-2 pt-3">
       <div className="grid h-full sm:max-w-lg grid-cols-3 mx-auto">
-        <div className="flex justify-center align-middle ">
+        <div className="flex justify-center align-middle">
           <Link
             href={`/`}
-            className={`w-full inline-flex flex-col items-center justify-center hover:bg-gray-50 dark:hover:bg-gray-800 group `}
+            className={`w-full inline-flex flex-col items-center justify-center`}
           >
             <FaHome
-              className="w-8 h-8 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-yellow "
+              className="w-8 h-8 mb-1 text-gray-500 dark:text-gray-400"
               fill="currentColor"
               aria-hidden="true"
             />
 
-            <span className="text-base text-gray-500 dark:text-gray-400 group-hover:text-yellow font-mono ">
+            <span className="text-base text-gray-500 dark:text-gray-400 font-mono ">
               خانه
             </span>
           </Link>
@@ -29,15 +29,15 @@ const MobileNavbar: FC = (allMenus: any) => {
           <Link
             id="about-me"
             href={"about-me"}
-            className="w-full inline-flex flex-col items-center justify-center hover:bg-gray-50 dark:hover:bg-gray-800 group"
+            className="w-full inline-flex flex-col items-center justify-center group"
           >
             <RxHamburgerMenu
-              className="w-8 h-8 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-yellow"
+              className="w-8 h-8 mb-1 text-gray-500 dark:text-gray-400"
               fill="currentColor"
               aria-hidden="true"
             />
 
-            <span className="text-base text-center text-gray-500 dark:text-gray-400 group-hover:text-yellow font-mono">
+            <span className="text-base text-center text-gray-500 dark:text-gray-400 font-mono">
               درباره من
             </span>
           </Link>
@@ -46,15 +46,15 @@ const MobileNavbar: FC = (allMenus: any) => {
         <div className="flex justify-center align-middle">
           <Link
             href={`#`}
-            className="w-full inline-flex flex-col items-center justify-center hover:bg-gray-50 dark:hover:bg-gray-800 group"
+            className="w-full inline-flex flex-col items-center justify-center group"
           >
             <FaShoppingCart
-              className="w-8 h-8 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-yellow "
+              className="w-8 h-8 mb-1 text-gray-500 dark:text-gray-400"
               fill="currentColor"
               aria-hidden="true"
             />
 
-            <span className="text-base text-center text-gray-500 dark:text-gray-400 group-hover:text-yellow font-mono">
+            <span className="text-base text-center text-gray-500 dark:text-gray-400 font-mono">
               پروژه ها
             </span>
           </Link>
