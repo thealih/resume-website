@@ -27,7 +27,8 @@ const MobileNavbar: FC = (allMenus: any) => {
 
         <div className="flex justify-center align-middle">
           <Link
-            href={`/site-categories`}
+            id="about-me"
+            href={"about-me"}
             className="w-full inline-flex flex-col items-center justify-center hover:bg-gray-50 dark:hover:bg-gray-800 group"
           >
             <RxHamburgerMenu
