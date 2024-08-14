@@ -1,6 +1,6 @@
 import { BiLogoJavascript, BiLogoTypescript } from "react-icons/bi";
-import { FaReact } from "react-icons/fa6";
-import { RiNextjsFill } from "react-icons/ri";
+import { FaBootstrap, FaReact } from "react-icons/fa6";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiJavascript, SiTypescript } from "react-icons/si";
 
 interface Props {
@@ -20,6 +20,12 @@ const ServicesBox = ({ icon, title, text }: Props) => {
         break;
       case "typescript":
         return <BiLogoTypescript className="text-6xl" />;
+        break;
+      case "tailwind":
+        return <RiTailwindCssFill className="text-6xl" />;
+        break;
+      case "bootstrap":
+        return <FaBootstrap className="text-6xl" />;
         break;
       default:
         return <BiLogoJavascript className="text-6xl" />;

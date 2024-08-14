@@ -26,6 +26,16 @@ const Services: FC = () => {
           text="توانایی کامل در جاوا اسکریت و پیاده سازی و گرفتن اطلاعات از backend و استفاده در داخل سایت"
           icon="javascript"
         />
+        <ServicesBox
+          title="Tailwind"
+          text="استایل دهی کد ها با استفاده از تیلویند"
+          icon="tailwind"
+        />
+        <ServicesBox
+          title="Bootstrap"
+          text="استایل دهی کد ها با استفاده از بوت استرپ"
+          icon="bootstrap"
+        />
       </div>
     </div>
   );

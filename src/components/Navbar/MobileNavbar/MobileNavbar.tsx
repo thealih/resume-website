@@ -7,7 +7,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 const MobileNavbar: FC = (allMenus: any) => {
   return (
     <div className="lg:hidden fixed bottom-0 left-0 w-full h-16 bg-white border-t border-gray-200  z-50">
-      <div className="grid h-full max-w-lg grid-cols-3 mx-auto">
+      <div className="grid h-full sm:max-w-lg grid-cols-3 mx-auto">
         <div className="flex justify-center align-middle">
           <Link
             href={`/`}

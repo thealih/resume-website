@@ -5,7 +5,7 @@ interface Props {
 
 const Skillbar = ({ title, progress }: Props) => {
   return (
-    <div className="bg-gray-100 rounded-xl p-5 px-20 mt-10 ">
+    <div className="bg-gray-100 rounded-xl  p-5 sm:px-10 mt-10 ">
       <div className="flex justify-between text-lg">
         <p>{title}</p>
         <p>% {progress}</p>
