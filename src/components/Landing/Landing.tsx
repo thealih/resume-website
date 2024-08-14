@@ -11,6 +11,15 @@ const Landing: FC = () => {
     <div className="sm:flex justify-between items-center py-16 bg-gray-100 px-7 sm:px-10">
       <div className="md:pr-10">
         <p className="font-mono text-blue-500">سلام ، من علـــی هستــــم</p>
+        <div className="lg:hidden flex justify-center sm:justify-start mt-10">
+          <Image
+            src={ProfilePhoto.src}
+            width={400}
+            height={200}
+            alt="profile photo"
+            className="rounded-full border-blue-800 border-4 border-solid"
+          />
+        </div>
         <h1 className="text-6xl font-mono mt-20 leading-relaxed bg-yellow-200 inline-block">
           برنامه نویس فرانت اند
         </h1>
