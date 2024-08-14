@@ -28,10 +28,10 @@ const AboutMe: FC = () => {
         </p>
       </div>
       <div className="w-full md:ml-40 lg:pr-40">
-        <Skillbar title="Next JS" progress={60} />
-        <Skillbar title="React JS" progress={80} />
+        <Skillbar title="Next JS" progress={70} />
+        <Skillbar title="React JS" progress={90} />
         <Skillbar title="Type script" progress={70} />
-        <Skillbar title="Java script" progress={85} />
+        <Skillbar title="Java script" progress={95} />
       </div>
     </div>
   );
