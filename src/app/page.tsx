@@ -18,7 +18,7 @@ export default function Home() {
         <Services />
       </div>
       <Projects />
-      <SkillsSection />
+      {/* <SkillsSection /> */}
       <LanguageSection />
       <Footer />
     </main>
