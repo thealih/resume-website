@@ -52,7 +52,7 @@ const Footer: FC = () => {
               </li>
               <li className="flex justify-center">
                 <Link
-                  href={"/"}
+                  href={"https://www.linkedin.com/in/ali-hashemi-6910aa20a/"}
                   className="text-gray-300 text-center hover:text-white"
                 >
                   <FaLinkedin className="text-6xl" />
@@ -60,7 +60,7 @@ const Footer: FC = () => {
               </li>
               <li className="flex justify-center">
                 <Link
-                  href={"/"}
+                  href={"https://github.com/thealih"}
                   className="text-gray-300 text-center hover:text-white"
                 >
                   <FaGithub className="text-6xl" />
@@ -68,7 +68,7 @@ const Footer: FC = () => {
               </li>
               <li className="flex justify-center">
                 <Link
-                  href={"/"}
+                  href={"https://t.me/TheAli_H6"}
                   className="text-gray-300 text-center hover:text-white"
                 >
                   <BiLogoTelegram className="text-6xl" />
@@ -89,10 +89,10 @@ const Footer: FC = () => {
               </li>
               <li className="flex justify-center">
                 <Link
-                  href={"/"}
+                  href={"https://github.com/thealih/resume-website"}
                   className="bg-gray-400 text-black font-mono p-4 px-10  rounded-md col-span-5 lg:col-span-3 text-center hover:bg-gray-100 hover:text-black"
                 >
-                  دانلود رزومه
+                  کد وبسایت
                 </Link>
               </li>
             </ul>
