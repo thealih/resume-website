@@ -4,7 +4,9 @@ import ServicesBox from "./ServisesBox/ServisesBox";
 const Services: FC = () => {
   return (
     <div className="w-full mt-20">
-      <h1 className="text-center text-4xl font-mono">چه خدماتی ارائه میدهم</h1>
+      <h1 className="text-center text-4xl font-mono">
+        در چه مواردی میتونم کمک کننده شما باشم
+      </h1>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 mt-10 md:gap-x-20 lg:grid-cols-6">
         <ServicesBox
           title="Next JS"

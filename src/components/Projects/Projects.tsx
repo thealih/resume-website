@@ -1,6 +1,6 @@
 import { FC } from "react";
 import ProjectsBox from "./ProjectsBox/ProjectsBox";
-import logo from "@/assest/Image/logo.ico";
+import logo from "@/assets/Image/logo.ico";
 import Link from "next/link";
 
 const Projects: FC = () => {

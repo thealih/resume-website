@@ -25,7 +25,7 @@ const Landing: FC = () => {
         </h1>
         <h2 className="text-5xl font-mono leading-relaxed">ساکن در تهران</h2>
         <div className="text-gray-500 text-lg mt-20">
-          <p className="text-xl">راه های ارتباطی با بنده</p>
+          <p className="text-xl">راه های ارتباطی</p>
           <div className="grid grid-cols-12 my-10 gap-x-10 items-center">
             <Link
               href={"tel:09912507897"}
@@ -34,32 +34,32 @@ const Landing: FC = () => {
               تماس با من
             </Link>
             <Link href={"https://t.me/TheAli_H6"} target="_blank">
-              <FaTelegram className="text-3xl ml-1 text-gray-500  hover:text-black ease-in-out duration-500" />
+              <FaTelegram className="text-4xl ml-1 text-gray-500  hover:text-black ease-in-out duration-500" />
             </Link>
             <Link
-              href={"https://www.linkedin.com/in/ali-hashemi-6910aa20a/"}
+              href={"https://www.linkedin.com/in/ali-hashemi-"}
               target="_blank"
             >
-              <FaLinkedin className="text-3xl mx-1 text-gray-500  hover:text-black ease-in-out duration-500" />
+              <FaLinkedin className="text-4xl mx-1 text-gray-500  hover:text-black ease-in-out duration-500" />
             </Link>
             <Link href={"https://github.com/thealih"} target="_blank">
-              <FaGithub className="text-3xl mx-1 text-gray-500 hover:text-black ease-in-out duration-500" />
+              <FaGithub className="text-4xl mx-1 text-gray-500 hover:text-black ease-in-out duration-500" />
             </Link>
-            <div className="text-3xl text-blue-800 col-span-4 mx-1 mr-5">
+            <div className="text-4xl text-blue-800 col-span-4 mx-1 mr-5">
               ـــــــــ.
             </div>
           </div>
           <div className="flex ease-in-out duration-500 max-sm:flex-col">
             <Link
               href={"mailto:a.hashemi6336@gmail.com"}
-              className="flex items-center justify-center text-xl mx-10 hover:text-black ease-in-out duration-500"
+              className="flex items-center justify-center text-2xl mx-10 hover:text-black ease-in-out duration-500"
             >
               a.hashemi6336@gmail.com
               <MdEmail className="text-3xl mx-1 text-gray-500 hover:text-black ase-in-out duration-500" />
             </Link>
             <Link
               href={"tel:09912507897"}
-              className="flex items-center justify-center text-xl mx-10 hover:text-black ease-in-out duration-500"
+              className="flex items-center justify-center text-2xl mx-10 hover:text-black ease-in-out duration-500 max-sm:mt-5"
             >
               09912507897
               <IoCall className="text-3xl mx-1 text-gray-500 hover:text-black ase-in-out duration-500" />

@@ -25,6 +25,7 @@ const SkillBox = ({ title, count }: Props) => {
   for (let index = 0; index < 5 - count; index++) {
     starItems.push(
       <Image
+        key={2}
         width={20}
         height={20}
         src={star.src}
@@ -36,7 +37,7 @@ const SkillBox = ({ title, count }: Props) => {
   return (
     <div className=" bg-gray-100  rounded-2xl flex justify-between py-5 px-3">
       <h1 className="text-2xl">{title}</h1>
-      <div className="course-box__rating flex ">
+      <div className="course-box__rating flex">
         {starItems}
         {starFillItems}
       </div>

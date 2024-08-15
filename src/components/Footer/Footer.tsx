@@ -1,14 +1,7 @@
 import Link from "next/link";
 import { FC } from "react";
 import { BiLogoTelegram } from "react-icons/bi";
-import {
-  FaFacebookF,
-  FaGithub,
-  FaInstagram,
-  FaLinkedin,
-  FaLinkedinIn,
-  FaTelegram,
-} from "react-icons/fa6";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 const Footer: FC = () => {
   return (
@@ -21,19 +14,15 @@ const Footer: FC = () => {
             </h3>
             <ul className="m-10 mt-20 leading-loose">
               <li>
-                <Link href={"/"} className="text-gray-300 hover:text-white">
-                  شماره تماس : 09912507897
-                </Link>
+                <p className="text-gray-300 ">شماره تماس : 09912507897</p>
               </li>
               <li>
-                <Link href={"/"} className="text-gray-300 hover:text-white">
+                <p className="text-gray-300 ">
                   ایمیل : a.hashemi6336@gmail.com
-                </Link>
+                </p>
               </li>
               <li>
-                <Link href={"/"} className="text-gray-300 hover:text-white">
-                  تلگرام: TheAliH@
-                </Link>
+                <p className="text-gray-300 ">تلگرام: TheAliH@</p>
               </li>
             </ul>
           </div>
@@ -46,14 +35,16 @@ const Footer: FC = () => {
                 <Link
                   href={"/"}
                   className="text-gray-300 text-center hover:text-white"
+                  target="_blank"
                 >
                   <FaInstagram className="text-6xl" />
                 </Link>
               </li>
               <li className="flex justify-center">
                 <Link
-                  href={"https://www.linkedin.com/in/ali-hashemi-6910aa20a/"}
+                  href={"https://www.linkedin.com/in/ali-hashemi-"}
                   className="text-gray-300 text-center hover:text-white"
+                  target="_blank"
                 >
                   <FaLinkedin className="text-6xl" />
                 </Link>
@@ -62,6 +53,7 @@ const Footer: FC = () => {
                 <Link
                   href={"https://github.com/thealih"}
                   className="text-gray-300 text-center hover:text-white"
+                  target="_blank"
                 >
                   <FaGithub className="text-6xl" />
                 </Link>
@@ -70,6 +62,7 @@ const Footer: FC = () => {
                 <Link
                   href={"https://t.me/TheAli_H6"}
                   className="text-gray-300 text-center hover:text-white"
+                  target="_blank"
                 >
                   <BiLogoTelegram className="text-6xl" />
                 </Link>

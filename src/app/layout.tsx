@@ -6,7 +6,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "علی هاشمی",
+  title: "Ali Hashemi",
   description: "This site is my resume",
 };
 
