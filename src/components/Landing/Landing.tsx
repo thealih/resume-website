@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import ProfilePhoto from "@/assest/Image/photo_2024-08-13_17-56-30.jpg";
+import ProfilePhoto from "@/assets/Image/photo_2024-08-13_17-56-30.jpg";
 import { FaTelegram } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
