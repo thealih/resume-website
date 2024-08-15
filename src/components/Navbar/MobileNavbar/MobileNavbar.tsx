@@ -2,7 +2,9 @@
 import Link from "next/link";
 import { FC, useContext } from "react";
 import { FaShoppingCart, FaHome } from "react-icons/fa";
+import { GoProjectSymlink } from "react-icons/go";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { SiAboutdotme } from "react-icons/si";
 
 const MobileNavbar: FC = (allMenus: any) => {
   return (
@@ -31,7 +33,7 @@ const MobileNavbar: FC = (allMenus: any) => {
             href={"about-me"}
             className="w-full inline-flex flex-col items-center justify-center group"
           >
-            <RxHamburgerMenu
+            <SiAboutdotme
               className="w-8 h-8 mb-1 text-gray-500 dark:text-gray-400"
               fill="currentColor"
               aria-hidden="true"
@@ -48,7 +50,7 @@ const MobileNavbar: FC = (allMenus: any) => {
             href={`#`}
             className="w-full inline-flex flex-col items-center justify-center group"
           >
-            <FaShoppingCart
+            <GoProjectSymlink
               className="w-8 h-8 mb-1 text-gray-500 dark:text-gray-400"
               fill="currentColor"
               aria-hidden="true"
