@@ -12,7 +12,7 @@ export default function Home() {
     <main className="font-sans bg-white">
       <Navbar />
       <Landing />
-      <div className="px-10 mb-20 mt-10 lg:mx-10">
+      <div className="p-10 mb-20 mt-10 lg:mx-10" id="about-me">
         <AboutMe />
         <Services />
       </div>

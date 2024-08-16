@@ -3,7 +3,7 @@ import Skillbar from "../Skillsbar/Skillsbar";
 
 const AboutMe: FC = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 " id="about-me">
+    <div className="grid grid-cols-1 md:grid-cols-2 ">
       <div className="w-full sm:pl-6 lg:px-20">
         <h1 className="max-sm:text-center text-4xl font-mono leading-snug sm:mb-10">
           درباره من
