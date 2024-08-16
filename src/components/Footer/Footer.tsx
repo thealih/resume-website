@@ -14,15 +14,13 @@ const Footer: FC = () => {
             </h3>
             <ul className="m-10 mt-20 leading-loose">
               <li>
-                <p className="text-gray-300 ">شماره تماس : 09912507897</p>
+                <p className="text-gray-300">شماره تماس : 09912507897</p>
               </li>
               <li>
-                <p className="text-gray-300 ">
-                  ایمیل : a.hashemi6336@gmail.com
-                </p>
+                <p className="text-gray-300">ایمیل : a.hashemi6336@gmail.com</p>
               </li>
               <li>
-                <p className="text-gray-300 ">تلگرام: TheAliH@</p>
+                <p className="text-gray-300">تلگرام: TheAliH@</p>
               </li>
             </ul>
           </div>
