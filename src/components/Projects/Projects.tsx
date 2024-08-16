@@ -5,7 +5,10 @@ import Link from "next/link";
 
 const Projects: FC = () => {
   return (
-    <div className="w-full text-center mt-20 bg-gray-100 p-10 mb-20 lg:px-10">
+    <div
+      className="w-full text-center mt-20 bg-gray-100 p-10 mb-20 lg:px-10"
+      id="projects"
+    >
       <h1 className="max-sm:text-center text-4xl font-mono sm:mb-10">
         نمونه کار های من
       </h1>

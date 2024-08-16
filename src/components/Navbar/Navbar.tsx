@@ -18,10 +18,10 @@ const Navbar: FC = () => {
               <Link href={"/"}>خانه</Link>
             </li>
             <li className="mx-5">
-              <Link href={"/"}>درباره من</Link>
+              <Link href="#about-me">درباره من</Link>
             </li>
             <li className="mx-5">
-              <Link href={"/"}>پروژه ها</Link>
+              <Link href={"#projects"}>پروژه ها</Link>
             </li>
           </ul>
         </div>
