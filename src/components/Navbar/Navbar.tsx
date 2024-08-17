@@ -28,7 +28,9 @@ const Navbar: FC = () => {
         </div>
         {/* <BiSearch className="font-bold text-4xl rounded-full border-black" /> */}
         <Link
-          href={"/"}
+          href={
+            "https://drive.google.com/uc?export=download&id=1EpJgjU_GggFQODfGJtHkwK0ywZqh4H5R"
+          }
           className="bg-blue-950 text-white p-4 px-10  rounded-md col-span-5 lg:col-span-3 text-center hover:text-gray-100"
         >
           دانلود رزومه
