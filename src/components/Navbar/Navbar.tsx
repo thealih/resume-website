@@ -10,19 +10,21 @@ const Navbar: FC = () => {
   return (
     <div className="p-5" id="pc-nav">
       <div className="flex justify-between items-center">
-        <div className="mr-5 flex items-center w-28 h-10">
-          <Image src={Logo.src} alt="" width={950} height={590} />
-        </div>
+        <Link href={"/"}>
+          <div className="mr-5 flex items-center w-28 h-10">
+            <Image src={Logo.src} alt="" width={950} height={590} />
+          </div>
+        </Link>
         <div>
           <ul className="hidden lg:flex  ">
             <li className="mx-5">
               <Link href={"/"}>خانه</Link>
             </li>
             <li className="mx-5">
-              <Link href="#about-me">درباره من</Link>
+              <Link href="/#about-me">درباره من</Link>
             </li>
             <li className="mx-5">
-              <Link href={"#projects"}>پروژه ها</Link>
+              <Link href={"/#projects"}>پروژه ها</Link>
             </li>
           </ul>
         </div>

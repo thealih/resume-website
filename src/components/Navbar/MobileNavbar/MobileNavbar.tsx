@@ -29,7 +29,7 @@ const MobileNavbar: FC = (allMenus: any) => {
 
         <div className="flex justify-center align-middle duration-300 ease-linear">
           <Link
-            href={"#about-me"}
+            href={"/#about-me"}
             className="w-full inline-flex flex-col items-center justify-center group"
           >
             <SiAboutdotme
@@ -46,7 +46,7 @@ const MobileNavbar: FC = (allMenus: any) => {
 
         <div className="flex justify-center align-middle">
           <Link
-            href={`#projects`}
+            href={`/#projects`}
             className="w-full inline-flex flex-col items-center justify-center group"
           >
             <GoProjectSymlink

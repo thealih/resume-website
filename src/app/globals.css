@@ -92,7 +92,7 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  font: var(--primary-font);
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -212,6 +212,8 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
   background-color: #5f87f6;
   border-radius: 7px;
+  animation: progress 1500ms ease-in 1;
+
   /* box-shadow: 1px 1px 5px 3px rgba(255, 0, 0, 0.8); */
 }
 

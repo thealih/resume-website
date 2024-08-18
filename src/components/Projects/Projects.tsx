@@ -33,11 +33,10 @@ const Projects: FC = () => {
       </div>
       <div className="my-10 sm:flex justify-evenly">
         <Link
-          href={"/"}
+          href={"/projects"}
           className="bg-blue-950 text-white p-6 px-10  rounded-full col-span-5 lg:col-span-3 text-center hover:bg-blue-600 hover:text-white block max-sm:my-5"
-          target="_blank"
         >
-          مشاهده آنلاین وبسایت
+          مشاهده نمونه کار ها
         </Link>
         <Link
           href={"https://github.com/thealih/resume-website"}
