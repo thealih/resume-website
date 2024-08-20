@@ -27,7 +27,7 @@ const Skillbar = ({ title, progress }: Props) => {
         if (entry.isIntersecting) {
           progress.classList.add("progress-bar");
         } else {
-          progress.classList.remove("progress-bar");
+          // progress.classList.remove("progress-bar");
         }
       });
     });
