@@ -2,6 +2,13 @@ import { FC } from "react";
 import ProjectsBox from "./ProjectsBox/ProjectsBox";
 import logo from "@/assets/Image/logo.ico";
 import Link from "next/link";
+import ProjectSection from "./ProjectSection/ProjectSection";
+import Iranlearn from "/public/Image/Screenshot 2024-08-18 161603.png";
+import SampleWorkSection from "../SampleWorkSection/SampleWorkSection";
+import { FaBootstrap, FaReact } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiVite } from "react-icons/si";
+import { TbBrandVite } from "react-icons/tb";
 
 const Projects: FC = () => {
   return (
@@ -12,7 +19,39 @@ const Projects: FC = () => {
       <h1 className="max-sm:text-center text-4xl font-mono sm:mb-10">
         نمونه کار های من
       </h1>
-      <div className="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
+        <SampleWorkSection
+          imageSrc={Iranlearn.src}
+          title="سایت ایران لرن"
+          text="فروش دوره های برنامه نویسی وب"
+        >
+          <FaReact />
+          <RiTailwindCssFill />
+          <FaBootstrap />
+          <TbBrandVite />
+        </SampleWorkSection>
+        <SampleWorkSection
+          imageSrc={Iranlearn.src}
+          title="سایت ایران لرن"
+          text="فروش دوره های برنامه نویسی وب"
+        >
+          <FaReact />
+          <RiTailwindCssFill />
+          <FaBootstrap />
+          <TbBrandVite />
+        </SampleWorkSection>
+        <SampleWorkSection
+          imageSrc={Iranlearn.src}
+          title="سایت ایران لرن"
+          text="فروش دوره های برنامه نویسی وب"
+        >
+          <FaReact />
+          <RiTailwindCssFill />
+          <FaBootstrap />
+          <TbBrandVite />
+        </SampleWorkSection>
+      </div>
+      {/* <div className="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
         <ProjectsBox
           title="وبسایت فروش دوره آموزشی"
           desc="توسعه کامل فرانت اند و اتصال api به سایت"
@@ -30,7 +69,7 @@ const Projects: FC = () => {
           title="ریسپانسیو"
           desc="ریسپانسیو بودن تمامی صفحات پروژه برای تمامی اندازه ها"
         />
-      </div>
+      </div> */}
       <div className="my-10 sm:flex justify-evenly">
         <Link
           href={"/projects"}

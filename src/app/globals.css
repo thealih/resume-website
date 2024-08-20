@@ -218,3 +218,34 @@ progress::-webkit-progress-value {
 }
 
 /* Finish Default Styles */
+/* .particles {
+  background: transparent;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-size: 32px;
+  color: black;
+  width: 100%;
+  letter-spacing: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.js-particles {
+  position: absolute;
+  animation: linear;
+  animation-name: from-left;
+  animation-duration: 2s;
+  -webkit-animation: linear;
+  -webkit-animation-name: from-left;
+  -webkit-animation-duration: 2s;
+}
+
+@-webkit-keyframes from-left {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+} */
