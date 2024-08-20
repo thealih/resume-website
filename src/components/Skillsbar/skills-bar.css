@@ -1,0 +1,44 @@
+.progress-box {
+  border-radius: 7px;
+  width: 100%;
+}
+
+.progress-box .progress-bg {
+  width: 100%;
+  height: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 7px;
+}
+
+.content-bg {
+  background-color: #5f87f6;
+  border-radius: 7px;
+  height: 10px;
+}
+.progress-bar {
+  opacity: 0;
+  animation: progress 2s ease-in-out forwards;
+}
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+progress {
+  border-radius: 7px;
+  width: 80%;
+  background-color: transparent;
+  /* box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); */
+}
+progress::-webkit-progress-bar {
+  background-color: rgb(255, 255, 255);
+  border-radius: 7px;
+}
+progress::-webkit-progress-value {
+  background-color: #5f87f6;
+  border-radius: 7px;
+}

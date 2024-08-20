@@ -13,7 +13,13 @@ const SampleWorkSection = ({ imageSrc, title, text, children }: Props) => {
     <div className=" border-gray-300 hover:shadow-2xl border-2 border-solid rounded-2xl mt-10 bg-gray-100 p-10 duration-300">
       <div className="">
         <Link href={"#"}>
-          <Image src={imageSrc} alt="website image" width={1896} height={867} />
+          <Image
+            src={imageSrc}
+            alt="website image"
+            width={1896}
+            height={867}
+            className="border-gray-400 border-solid border-2 rounded-lg"
+          />
         </Link>
       </div>
       <div className="max-md:mt-5 max-md:px-5 text-right mt-5 ">
@@ -26,7 +32,7 @@ const SampleWorkSection = ({ imageSrc, title, text, children }: Props) => {
           </li>
           <li className="my-7 lg:my-10">
             <h5 className="text-gray-600 text-2xl leading-normal font-mono">
-              خلاصه وب سایت
+              معرفی وب سایت
             </h5>
             <p className="text-lg font-mono leading-normal mt-2">{text}</p>
           </li>
