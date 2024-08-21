@@ -55,7 +55,7 @@ const Skillsbar = ({ title, progress }: Props) => {
         <progress
           value={`${progress}`}
           max="100"
-          className="w-full text-base rounded-xl content-bar"
+          className="w-full text-base rounded-xl content-bar opacity-0"
         ></progress>
       </div>
     </div>

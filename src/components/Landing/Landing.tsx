@@ -1,17 +1,61 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import { FC } from "react";
+import { FC, useEffect, useRef } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import ProfilePhoto from "@/assets/Image/photo_2024-08-13_17-56-30.jpg";
 import { FaTelegram } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
 const Landing: FC = () => {
+  const contentRef = useRef<HTMLDivElement | null>(null);
+  useEffect(() => {
+    // Ensure the ref is not null and code only runs on the client
+    if (!contentRef.current) return;
+
+    // Create the IntersectionObserver instance
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        // Find the ".content-bar" element inside the observed element
+        const progress = entry.target.querySelector(
+          ".content-bar"
+        ) as HTMLElement | null;
+
+        if (!progress) return; // Skip if the element is not found
+
+        if (entry.isIntersecting) {
+          progress.classList.add("square-animation");
+        } else {
+          progress.classList.remove("square-animation");
+        }
+      });
+    });
+
+    // Start observing the element
+    observer.observe(contentRef.current);
+
+    // Clean up the observer when the component unmounts
+    return () => {
+      if (contentRef.current) {
+        observer.unobserve(contentRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <div className="sm:flex justify-between items-center py-16 bg-gray-100 px-7 sm:px-10">
-      <div className="md:pr-10">
+    <div className="sm:flex flex-row-reverse justify-between items-center py-16 bg-gray-100 px-7 sm:px-10">
+      <div className="w-1/3 hidden lg:flex justify-center ml-20 ">
+        <Image
+          src={ProfilePhoto.src}
+          width={400}
+          height={200}
+          alt="profile photo"
+          className="rounded-full border-blue-800 border-4 border-solid "
+        />
+      </div>
+      <div className="md:pr-10" ref={contentRef}>
         <p className="font-mono text-blue-500">سلام ، من علـــی هستــــم</p>
-        <div className="lg:hidden flex justify-center max-lg:mt-10 sm:ml-20">
+        <div className="lg:hidden flex  justify-center max-lg:mt-10 sm:ml-20 opacity-0 content-bar">
           <Image
             src={ProfilePhoto.src}
             width={400}
@@ -66,15 +110,6 @@ const Landing: FC = () => {
             </Link>
           </div>
         </div>
-      </div>
-      <div className="w-1/3 hidden lg:flex justify-center ml-20">
-        <Image
-          src={ProfilePhoto.src}
-          width={400}
-          height={200}
-          alt="profile photo"
-          className="rounded-full border-blue-800 border-4 border-solid"
-        />
       </div>
     </div>
   );

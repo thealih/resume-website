@@ -152,6 +152,7 @@ table {
   --white-color: #ffffff;
   --black-color: #1a1a1a;
   --dark-color: #111827;
+  --blue-color: #172554;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -197,7 +198,42 @@ a {
 }
 
 a:hover {
-  color: #1e83f0;
+  color: var(--primary-color);
 }
 
 /* Finish Default Styles */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  /* border-radius: 20px; */
+  transition: all ease-in-out 0.5s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  /* background: var(--blue-color); */
+}
+
+.square-animation {
+  animation: square-enter 1.5s forwards;
+}
+
+@keyframes square-enter {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
