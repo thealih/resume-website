@@ -7,7 +7,7 @@ interface Props {
   progress: number;
 }
 
-const SkillBar = ({ title, progress }: Props) => {
+const SkillsBar = ({ title, progress }: Props) => {
   const contentRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -62,4 +62,4 @@ const SkillBar = ({ title, progress }: Props) => {
   );
 };
 
-export default SkillBar;
+export default SkillsBar;

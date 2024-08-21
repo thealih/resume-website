@@ -100,7 +100,11 @@ const IranLearn: FC = () => {
             </li>
             <li>
               4. حالا به
-              <Link href={"#"} className="text-sky-600">
+              <Link
+                href={"https://iranlearned.ir/"}
+                className="text-sky-600"
+                target="_blank"
+              >
                 {" "}
                 لینک آنلاین{" "}
               </Link>

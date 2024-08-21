@@ -1,6 +1,6 @@
 import { FC } from "react";
 import SkillBox from "../SkillBox/SkillBox";
-import SkillBar from "../SkillsBar/SkillsBar";
+import SkillsBar from "../SkillsBar/SkillsBar";
 
 const SkillsSection: FC = () => {
   return (
@@ -10,16 +10,16 @@ const SkillsSection: FC = () => {
           مهارت های برنامه نویسی
         </h1>
         <div className="lg:grid grid-cols-2 gap-x-10">
-          <SkillBar title="Next JS" progress={70} />
-          <SkillBar title="React JS" progress={90} />
-          <SkillBar title="Type script" progress={70} />
-          <SkillBar title="Java script" progress={95} />
-          <SkillBar title="Tailwind" progress={80} />
-          <SkillBar title="Bootstrap" progress={70} />
-          <SkillBar title="Java script" progress={85} />
-          <SkillBar title="GIT" progress={80} />
-          <SkillBar title="Html" progress={100} />
-          <SkillBar title="Css" progress={100} />
+          <SkillsBar title="Next JS" progress={70} />
+          <SkillsBar title="React JS" progress={90} />
+          <SkillsBar title="Type script" progress={70} />
+          <SkillsBar title="Java script" progress={95} />
+          <SkillsBar title="Tailwind" progress={80} />
+          <SkillsBar title="Bootstrap" progress={70} />
+          <SkillsBar title="Java script" progress={85} />
+          <SkillsBar title="GIT" progress={80} />
+          <SkillsBar title="Html" progress={100} />
+          <SkillsBar title="Css" progress={100} />
         </div>
       </div>
       <div className="md:w-1/2 md:px-10 max-md:my-10 ">
