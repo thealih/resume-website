@@ -7,7 +7,7 @@ import SkillsSection from "@/components/SkillsSection/SkillsSection";
 
 export default function Home() {
   return (
-    <main className="font-sans bg-white">
+    <main className="font-sans bg-white 2xl:container">
       <Landing />
       <div className="p-10 mb-20 mt-10 lg:mx-10" id="about-me">
         <AboutMe />

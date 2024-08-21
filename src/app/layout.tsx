@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="fa">
       <body className={`${inter.className} font-sans bg-white`}>
         <Navbar />
-        {children}
+        <div className="2xl:flex 2xl:justify-center">{children}</div>
         <Analytics />
         <SpeedInsights />
         <Footer />

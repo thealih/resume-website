@@ -43,7 +43,7 @@ const Landing: FC = () => {
   }, []);
 
   return (
-    <div className="sm:flex flex-row-reverse justify-between items-center py-16 bg-gray-100 px-7 sm:px-10">
+    <div className="lg:flex flex-row-reverse justify-between items-center py-16 bg-gray-100 px-7 sm:px-10">
       <div className="w-1/3 hidden lg:flex justify-center ml-20">
         <Image
           src={ProfilePhoto.src}
