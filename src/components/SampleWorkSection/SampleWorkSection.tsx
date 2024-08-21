@@ -1,3 +1,4 @@
+import { HtmlProps } from "next/dist/shared/lib/html-context.shared-runtime";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
@@ -5,10 +6,17 @@ interface Props {
   imageSrc: string;
   title: string;
   text: string;
+  href: string;
   children: any;
 }
 
-const SampleWorkSection = ({ imageSrc, title, text, children }: Props) => {
+const SampleWorkSection = ({
+  imageSrc,
+  title,
+  text,
+  href,
+  children,
+}: Props) => {
   return (
     <div className=" border-gray-300 hover:shadow-2xl border-2 border-solid rounded-2xl mt-10 bg-gray-100 p-10 duration-300">
       <div className="">
@@ -46,7 +54,7 @@ const SampleWorkSection = ({ imageSrc, title, text, children }: Props) => {
           </li>
         </ul>
         <Link
-          href={"#"}
+          href={href}
           className="bg-blue-950 text-white p-5 bottom-0 rounded-xl text-lg font-mono leading-normal mt-20 lg:bottom-0 hover:text-white"
         >
           توضیحات بیشتر

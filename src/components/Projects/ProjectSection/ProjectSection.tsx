@@ -6,9 +6,10 @@ interface Props {
   title: string;
   text: string;
   desc: string;
+  href: string;
 }
 
-const ProjectSection = ({ imageSrc, title, text, desc }: Props) => {
+const ProjectSection = ({ imageSrc, title, text, desc, href }: Props) => {
   return (
     <div className="md:flex justify-between flex-row-reverse border-gray-300 hover:shadow-2xl border-2 border-solid rounded-2xl mt-10 bg-gray-100 p-10 duration-300">
       <div className="md:w-5/12 ">
@@ -38,7 +39,7 @@ const ProjectSection = ({ imageSrc, title, text, desc }: Props) => {
           </li>
         </ul>
         <Link
-          href={"#"}
+          href={href}
           className="bg-blue-950 text-white p-5 bottom-0 rounded-xl text-lg font-mono leading-normal mt-2 xl:absolute lg:bottom-0 hover:text-white"
         >
           توضیحات بیشتر

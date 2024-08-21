@@ -15,7 +15,7 @@ progress::-webkit-progress-value {
 
 .progress-bar {
   opacity: 0;
-  animation: progress-tool 2s ease-in-out forwards;
+  animation: progress-tool 1s ease-in-out forwards;
   /* animation-timeline: scroll(root); */
 }
 @keyframes progress-tool {

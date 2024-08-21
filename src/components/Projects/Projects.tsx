@@ -23,6 +23,7 @@ const Projects: FC = () => {
           imageSrc={Iranlearn.src}
           title="سایت ایران لرن"
           text="فروش دوره های برنامه نویسی وب"
+          href="/projects/iranlearn"
         >
           <FaReact />
           <RiTailwindCssFill />
@@ -33,6 +34,7 @@ const Projects: FC = () => {
           imageSrc={Iranlearn.src}
           title="سایت ایران لرن"
           text="فروش دوره های برنامه نویسی وب"
+          href="#"
         >
           <FaReact />
           <RiTailwindCssFill />
@@ -43,6 +45,7 @@ const Projects: FC = () => {
           imageSrc={resumeWebsite.src}
           title="سایت رزومه"
           text="معرفی و رزومه کاری خودم"
+          href="#"
         >
           <SiNextdotjs />
           <BiLogoTypescript />

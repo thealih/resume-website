@@ -20,6 +20,7 @@ const projects = () => {
         desc="برای دیدن بخش های کامل نمونه سایت دانلود کد ها و نحوه استفاده و
               مشاهده Local درون مرورگر خود از وبسایت به توضیحات یشتر مراجعه
               کنید."
+        href="/projects/iranlearn"
       />
       <ProjectSection
         imageSrc={Iranlearn.src}
@@ -28,6 +29,7 @@ const projects = () => {
         desc="برای دیدن بخش های کامل نمونه سایت دانلود کد ها و نحوه استفاده و
               مشاهده Local درون مرورگر خود از وبسایت به توضیحات یشتر مراجعه
               کنید."
+        href="/projects/iranlearn"
       />
       <ProjectSection
         imageSrc={Iranlearn.src}
@@ -36,6 +38,7 @@ const projects = () => {
         desc="برای دیدن بخش های کامل نمونه سایت دانلود کد ها و نحوه استفاده و
               مشاهده Local درون مرورگر خود از وبسایت به توضیحات یشتر مراجعه
               کنید."
+        href="/projects/iranlearn"
       />
     </div>
   );
