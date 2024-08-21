@@ -44,18 +44,18 @@ const Landing: FC = () => {
 
   return (
     <div className="sm:flex flex-row-reverse justify-between items-center py-16 bg-gray-100 px-7 sm:px-10">
-      <div className="w-1/3 hidden lg:flex justify-center ml-20 ">
+      <div className="w-1/3 hidden lg:flex justify-center ml-20">
         <Image
           src={ProfilePhoto.src}
           width={400}
           height={200}
           alt="profile photo"
-          className="rounded-full border-blue-800 border-4 border-solid "
+          className="rounded-full border-blue-800 border-4 border-solid"
         />
       </div>
       <div className="md:pr-10" ref={contentRef}>
         <p className="font-mono text-blue-500">سلام ، من علـــی هستــــم</p>
-        <div className="lg:hidden flex  justify-center max-lg:mt-10 sm:ml-20 opacity-0 content-bar">
+        <div className="lg:hidden flex  justify-center max-lg:mt-10 sm:ml-20 content-bar opacity-0">
           <Image
             src={ProfilePhoto.src}
             width={400}
@@ -68,9 +68,9 @@ const Landing: FC = () => {
           برنامه نویس فرانت اند
         </h1>
         <h2 className="text-5xl font-mono leading-relaxed">ساکن در تهران</h2>
-        <div className="text-gray-500 text-lg mt-20">
+        <div className="text-gray-500 text-lg mt-20 ">
           <p className="text-xl">راه های ارتباطی</p>
-          <div className="grid grid-cols-12 my-10 gap-x-10 items-center">
+          <div className="grid grid-cols-12 my-10 gap-x-10 items-center ">
             <Link
               href={"tel:09912507897"}
               className="bg-blue-800 text-white p-6  rounded-full col-span-5 lg:col-span-3 text-center hover:text-gray-100"
