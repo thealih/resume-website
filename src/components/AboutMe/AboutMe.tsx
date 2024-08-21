@@ -1,5 +1,5 @@
 import { FC } from "react";
-import SkillsBar from "../SkillsBar/SkillsBar";
+import Skillsbar from "../Skillsbar/Skillsbar";
 
 const AboutMe: FC = () => {
   return (
@@ -34,10 +34,10 @@ const AboutMe: FC = () => {
         </p>
       </div>
       <div className="w-full md:ml-40 lg:pr-40 hidden md:block particles">
-        <SkillsBar title="Next JS" progress={70} />
-        <SkillsBar title="React JS" progress={90} />
-        <SkillsBar title="Type script" progress={70} />
-        <SkillsBar title="Java script" progress={95} />
+        <Skillsbar title="Next JS" progress={70} />
+        <Skillsbar title="React JS" progress={90} />
+        <Skillsbar title="Type script" progress={70} />
+        <Skillsbar title="Java script" progress={95} />
       </div>
     </div>
   );
