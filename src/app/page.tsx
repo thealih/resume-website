@@ -7,15 +7,17 @@ import SkillsSection from "@/components/SkillsSection/SkillsSection";
 
 export default function Home() {
   return (
-    <main className="font-sans bg-white 2xl:container">
-      <Landing />
-      <div className="p-10 mb-20 mt-10 lg:mx-10" id="about-me">
-        <AboutMe />
-        <Services />
+    <main className="font-sans bg-white 2xl:flex 2xl:justify-center 2xl:w-full">
+      <div className="2xl:container">
+        <Landing />
+        <div className="p-10 mb-20 mt-10 lg:mx-10" id="about-me">
+          <AboutMe />
+          <Services />
+        </div>
+        <Projects />
+        <SkillsSection />
+        <LanguageSection />
       </div>
-      <Projects />
-      <SkillsSection />
-      <LanguageSection />
     </main>
   );
 }
