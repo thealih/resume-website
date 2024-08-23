@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
+import { ThreeDots } from "react-loader-spinner";
 interface Props {
   imageSrc: string;
   title: string;
@@ -50,7 +51,20 @@ const SampleWorkSection = ({
       }
     };
   }, []);
-
+  function onImageLoad() {
+    return (
+      <ThreeDots
+        visible={true}
+        height="80"
+        width="80"
+        color="#4fa94d"
+        radius="9"
+        ariaLabel="three-dots-loading"
+        wrapperStyle={{}}
+        wrapperClass=""
+      />
+    );
+  }
   return (
     <div className=" " ref={contentRef}>
       <div className="border-gray-300 hover:shadow-2xl border-2 border-solid rounded-2xl mt-10 bg-gray-100 p-10 duration-300 content-bar">
@@ -62,6 +76,7 @@ const SampleWorkSection = ({
               width={1896}
               height={867}
               className="border-gray-400 border-solid border-2 rounded-lg"
+              onLoad={onImageLoad}
             />
           </Link>
         </div>

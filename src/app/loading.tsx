@@ -8,7 +8,7 @@ const Loading = () => {
         visible={true}
         height="80"
         width="80"
-        color="#172554"
+        color="#4fa94d"
         radius="9"
         ariaLabel="three-dots-loading"
         wrapperStyle={{}}

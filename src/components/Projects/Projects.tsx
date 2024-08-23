@@ -45,7 +45,7 @@ const Projects: FC = () => {
           imageSrc={resumeWebsite.src}
           title="سایت رزومه"
           text="معرفی و رزومه کاری خودم"
-          href="#"
+          href="/projects/resume-website"
         >
           <SiNextdotjs />
           <BiLogoTypescript />

@@ -35,8 +35,8 @@ const SkillsSection: FC = () => {
           <SkillBox title="خودآگاهی" count={4} />
           <SkillBox title="شنونده خوب" count={5} />
           <SkillBox title="مدیریت زمان" count={4} />
-          <SkillBox title="تفکر نقادانه" count={3} />
-          <SkillBox title="کار تیمی" count={3} />
+          <SkillBox title="تفکر نقادانه" count={4} />
+          <SkillBox title="کار تیمی" count={4} />
         </div>
       </div>
     </div>
