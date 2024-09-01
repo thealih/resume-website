@@ -28,12 +28,6 @@ export default function RootLayout({
           type="image/<generated>"
           sizes="<generated>"
         />
-        <link
-          rel="apple-touch-icon"
-          href="/public/Logo/Layer 0 Frame.png"
-          type="image/<generated>"
-          sizes="<generated>"
-        />
       </head>
       <body className={`${inter.className} font-sans bg-white`}>
         <Navbar />

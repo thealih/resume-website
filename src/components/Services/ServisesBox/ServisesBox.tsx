@@ -30,7 +30,7 @@ const ServicesBox = ({ icon, title, text }: Props) => {
         if (entry.isIntersecting) {
           progress.classList.add("square-animation");
         } else {
-          progress.classList.remove("square-animation");
+          // progress.classList.remove("square-animation");
         }
       });
     });
