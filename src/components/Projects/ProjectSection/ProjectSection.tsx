@@ -11,8 +11,8 @@ interface Props {
 
 const ProjectSection = ({ imageSrc, title, text, desc, href }: Props) => {
   return (
-    <div className="md:flex justify-between flex-row-reverse border-gray-300 hover:shadow-2xl border-2 border-solid rounded-2xl mt-10 bg-gray-100 p-10 duration-300">
-      <div className="md:w-5/12 ">
+    <div className="md:flex justify-between flex-row-reverse border-gray-300 hover:shadow-2xl border-2 border-solid rounded-2xl mt-10 bg-gray-100 p-4 pb-10 md:p-10 duration-300">
+      <div className="md:w-5/12">
         <Link href={"#"}>
           <Image src={imageSrc} alt="website image" width={1896} height={867} />
         </Link>

@@ -15,7 +15,7 @@ const ProjectsBox = ({ title, desc, img }: Props) => {
 
       <p className="text-gray-300 text-lg pt-5 text-right">{desc}</p>
       {img && (
-        <div className="mt-10 flex justify-center items-center max-sm:text-center ">
+        <div className="mt-10 flex justify-center items-center max-sm:text-center">
           <Image src={img} alt="logo" width={150} height={100} />
         </div>
       )}
