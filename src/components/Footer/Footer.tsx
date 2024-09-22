@@ -6,8 +6,8 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
 const Footer: FC = () => {
   return (
     <>
-      <div className="bg-[rgb(23,37,84)] text-white   ">
-        <div className=" text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-16 pb-40">
+      <div className="bg-[rgb(23,37,84)] text-white flex justify-center">
+        <div className="container text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-16 pb-40">
           <div>
             <h3 className="text-5xl font-mono text-center my-10">
               اطلاعات تماس
