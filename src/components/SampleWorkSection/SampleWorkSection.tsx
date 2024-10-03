@@ -67,7 +67,7 @@ const SampleWorkSection = ({
   }
   return (
     <div className=" " ref={contentRef}>
-      <div className="border-gray-300 hover:shadow-2xl border-2 border-solid rounded-2xl mt-10 bg-gray-100 p-2 pb-10 xl:p-5 duration-300 content-bar">
+      <div className="border-gray-300 hover:shadow-2xl border-2 border-solid rounded-2xl mt-10 bg-gray-100 p-2 pb-10 lg:p-5 duration-300 content-bar">
         <div className="">
           <Link href={"#"}>
             <Image
@@ -80,7 +80,7 @@ const SampleWorkSection = ({
             />
           </Link>
         </div>
-        <div className="max-md:mt-5 max-md:px-5 text-right mt-5 ">
+        <div className="max-md:mt-5 max-md:px-5 text-right mt-5 xl:my-5">
           <ul className="mb-16">
             <li className="lg:mb-10">
               <h5 className="text-gray-600 text-2xl leading-normal font-mono">
