@@ -41,7 +41,7 @@ const AboutMe: FC = () => {
           را طراحی و پیاده‌سازی کنم و در پروژه‌های توسعه وب نقش مؤثری ایفا کنم.
         </p>
       </div>
-      <div className="w-full md:ml-40 lg:pr-40 hidden md:block particles">
+      <div className="w-full md:ml-40 lg:pr-40 particles">
         <h1 className="max-sm:text-center text-4xl font-mono leading-snug my-10 ">
           سابقه شغلی
         </h1>
