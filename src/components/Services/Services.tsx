@@ -9,6 +9,11 @@ const Services: FC = () => {
       </h1>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 mt-10 md:gap-x-20 lg:grid-cols-6">
         <ServicesBox
+          title="Blazor"
+          text="نوشتن کد ها با استفاده از بلیز"
+          icon="blazor"
+        />
+        <ServicesBox
           title="Next JS"
           text="توانایی نوشتن برنامه با نکست و app router و برقراری ارتباط با پایگاه داده برنامه"
           icon="next"

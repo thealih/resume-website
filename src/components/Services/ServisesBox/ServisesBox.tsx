@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { BiLogoJavascript, BiLogoTypescript } from "react-icons/bi";
 import { FaBootstrap, FaReact } from "react-icons/fa6";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { SiBlazor } from "react-icons/si";
 
 interface Props {
   icon: string;
@@ -62,6 +63,9 @@ const ServicesBox = ({ icon, title, text }: Props) => {
         break;
       case "bootstrap":
         return <FaBootstrap className="text-6xl" />;
+        break;
+      case "blazor":
+        return <SiBlazor className="text-6xl" />;
         break;
       default:
         return <BiLogoJavascript className="text-6xl" />;

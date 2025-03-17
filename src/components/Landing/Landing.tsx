@@ -65,7 +65,7 @@ const Landing: FC = () => {
           />
         </div>
         <h1 className="text-6xl font-mono mt-20 leading-relaxed bg-yellow-200 inline-block">
-          برنامه نویس فرانت اند
+          برنامه نویس
         </h1>
         <h2 className="text-5xl font-mono leading-relaxed">ساکن در تهران</h2>
         <div className="text-gray-500 text-lg mt-20 ">
@@ -105,7 +105,7 @@ const Landing: FC = () => {
               href={"tel:09912507897"}
               className="flex items-center justify-center text-2xl mx-10 hover:text-black ease-in-out duration-500 max-sm:mt-5"
             >
-              09912507897
+              09127068462
               <IoCall className="text-3xl mx-1 text-gray-500 hover:text-black ase-in-out duration-500" />
             </Link>
           </div>
