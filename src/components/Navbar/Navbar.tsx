@@ -8,7 +8,7 @@ import { FaArrowCircleUp } from "react-icons/fa";
 
 const Navbar: FC = () => {
   return (
-    <div className="p-5" id="pc-nav">
+    <div className="p-5 fixed top-0 left-0 w-full bg-white z-50" id="pc-nav">
       <div className="flex justify-between items-center">
         <Link href={"/"}>
           <div className="mr-5 flex items-center w-28 h-10">

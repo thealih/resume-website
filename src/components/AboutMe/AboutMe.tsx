@@ -1,60 +1,85 @@
-import { FC } from "react";
-import Skillsbar from "../Skillsbar/Skillsbar";
-import Image from "next/image";
-import Logo from "@/assets/Image/30book-logo.png";
+import {FC} from "react";
+import Logo30Book from "@/assets/Image/Logo_30book.png";
+import LogoSharif from "@/assets/Image/logo_sharif.png";
+import WorkSection from "@/components/WorkSection/WorkSection";
 
 const AboutMe: FC = () => {
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-2 ">
-      <div className="w-full sm:pl-6 lg:px-20">
-        <h1 className="max-sm:text-center text-4xl font-mono leading-snug sm:mb-10">
-          درباره من
-        </h1>
-        <ul className="text-2xl text-gray-400 mt-4 text-justify leading-loose">
-          <li className="font-mono">علی هاشمی</li>
-          <li>متولد: 1381</li>
-          <li>تحصیلات: دانش‌آموخته رشته علوم کامپیوتر</li>
-          <li>تخصص: برنامه‌نویس فرانت‌اند</li>
-        </ul>
+    return (
+        <div className="grid grid-cols-1 md:grid-cols-2 ">
+            <div className="w-full sm:pl-6 lg:px-20">
+                <h1 className="max-sm:text-center text-4xl font-mono leading-snug sm:mb-10">
+                    درباره من
+                </h1>
+                <ul className="text-2xl text-gray-400 mt-4 text-justify leading-loose">
+                    <li className="font-bold text-gray-500 text-3xl mb-6">علی هاشمی</li>
+                    <li>متولد: 1381</li>
+                    <li>تحصیلات: دانش‌آموخته رشته علوم کامپیوتر</li>
+                    <li>تخصص: توسعه‌دهنده فول‌استک</li>
+                </ul>
 
-        <p className="text-2xl text-gray-400 mt-4 text-justify leading-relaxed">
-          من علی هاشمی هستم، دانش‌آموخته رشته کامپیوتر با تخصص در برنامه‌نویسی
-          وبسایت . تجربه کار با تکنولوژی های asp و c# در شرکت سی بوک رو داشتم.
-          اکنون با پایان سال، آماده ورود به شرکت جدید و افزایش مهارت هایم هستم و
-          با اشتیاق به دنبال شروع فعالیت حرفه‌ای خود و ارتقای مهارت‌هایم در این
-          مسیر می‌باشم.
-        </p>
-        <h1 className="max-sm:text-center text-4xl font-mono leading-snug my-10 ">
-          چرا انتخاب من :)
-        </h1>
-        <p className="text-2xl text-gray-400 mt-4 text-justify leading-relaxed">
-          من در بخش بک اند با تکنولوژی های asp کار کردم و سایت هایی با معماری
-          mvc داحل گیت هابم است.
-        </p>
-        <p className="text-2xl text-gray-400 mt-4 text-justify leading-relaxed">
-          در سمت فرانت تجربه کار با blazor رو داشتم و و به طور کامل با razor
-          page ها هم کار کردم.
-        </p>
-        <p className="text-2xl text-gray-400 mt-4 text-justify leading-relaxed">
-          به طور کامل به React مسلط هستم و تجربه کار با Next.js را نیز دارم. این
-          توانایی‌ها به من این امکان را می‌دهد که رابط‌های کاربری کارآمد و زیبا
-          را طراحی و پیاده‌سازی کنم و در پروژه‌های توسعه وب نقش مؤثری ایفا کنم.
-        </p>
-      </div>
-      <div className="w-full md:ml-40 lg:pr-40 particles">
-        <h1 className="max-sm:text-center text-4xl font-mono leading-snug my-10 ">
-          سابقه شغلی
-        </h1>
-        <Image src={Logo.src} width={200} height={100} alt="لوگو سی بوک" />
-        <p className="text-2xl text-gray-400 mt-8 text-justify leading-relaxed">
-          از مهرماه ۱۴۰۳ به تیم حرفه‌ای سی بوک پیوستم و در کنار این تیم توانمند،
-          در زمینه طراحی و توسعه وب‌سایت‌ها فعالیت داشتم. تمرکزم بر معماری MVC و
-          پیاده‌سازی Blazor Pages بوده است و در این مسیر، تجربه ارزشمندی در
-          توسعه نرم‌افزارهای مدرن و بهینه کسب کرده‌ام.
-        </p>
-      </div>
-    </div>
-  );
+                <p className="text-2xl text-gray-400 mt-4 text-justify leading-loose">
+                    من علی هاشمی هستم؛ دانش‌آموخته رشته علوم کامپیوتر با علاقه‌مندی جدی به توسعه نرم‌افزارهای وب.
+                    سابقه کار حرفه‌ای در تیم فنی دانشگاه صنعتی شریف (ICTC) و همکاری با تیم سی‌بوک را دارم.
+                    در این مسیر، با پیاده‌سازی پروژه‌های مبتنی بر <strong>ASP.NET Core Web API</strong> و همچنین
+                    هماهنگی سامانه‌ها با SSO دانشگاه شریف، تجربه فنی قابل توجهی کسب کرده‌ام.
+                </p>
+                <h1 className="max-sm:text-center text-4xl font-mono leading-snug my-10 ">
+                    چرا من :)
+                </h1>
+                <p className="text-2xl text-gray-400 mt-4 text-justify leading-loose">
+                    در بخش بک‌اند، تمرکز من بر توسعه سیستم‌های مبتنی بر <strong>ASP.NET Core</strong> و معماری
+                    Clean Architecture / MVC بوده است. چندین پروژه‌ی واقعی را با این تکنولوژی‌ها پیاده‌سازی کرده‌ام
+                    که مستندات آن‌ها در گیت‌هابم قابل مشاهده است.
+                </p>
+                <p className="text-2xl text-gray-400 mt-4 text-justify leading-loose">
+                    در سمت فرانت‌اند، با تکنولوژی‌های Blazor و Razor Pages تجربه عملی داشته‌ام
+                    و به‌صورت کامل به React و Next.js مسلط هستم. این توانایی‌ها به من این امکان را می‌دهد
+                    که رابط‌های کاربری مدرن، بهینه و تعاملی طراحی و پیاده‌سازی کنم.
+                </p>
+                <p className="text-2xl text-gray-400 mt-4 text-justify leading-loose">
+                    هدف من توسعه نرم‌افزارهای باکیفیت، قابل نگهداری و مقیاس‌پذیر است، و همیشه در مسیر یادگیری و پیشرفت قدم برمی‌دارم.
+                </p>
+            </div>
+            <div className="w-full md:ml-40 lg:pr-40 particles">
+                <h1 className="max-sm:text-center text-4xl font-mono leading-snug my-10 ">
+                    سابقه شغلی
+                </h1>
+                <div className="space-y-10">
+                    <WorkSection
+                        date=" تهران، ایران — 🗓️ از مهر 1403 تا اسفند 1403"
+                        src={Logo30Book.src}
+                        width={90}
+                        height={45}
+                        point={["توسعه رابط‌های کاربری با استفاده از Blazor و Razor Components",
+                            "طراحی و پیاده‌سازی ساختار ماژولار بر پایه الگوی MVC",
+                            "بهینه‌سازی عملکرد صفحات وب و تجربه کاربری (UX)",
+                            "همکاری مؤثر با تیم طراحی و تحلیل کسب‌وکار جهت پیاده‌سازی نیازمندی‌های پروژه‌ها",
+                            "کسب تجربه عملی در توسعه نرم‌افزارهای سریع، مقیاس‌پذیر و maintainable"
+                        ]}
+                        title={"سایت کتاب فروشی سی بوک"}
+                        desc="در تیم فنی شرکت سی‌بوک، در نقش توسعه‌دهنده وب مشغول به فعالیت بودم و در طراحی و
+               توسعه وب‌سایت‌های مدرن مشارکت داشتم. تمرکز اصلی من بر روی معماری MVC و پیاده‌سازی صفحات تعاملی با استفاده از Blazor Pages بود."/>
+                    <WorkSection
+                        date=" تهران، ایران — 🗓️ از فروردین 1404 تا اکنون"
+                        src={LogoSharif.src}
+                        title="دانشگاه صنعتی شریف - واحد ICTC"
+                        width={80}
+                        height={40}
+                        desc="در نقش برنامه‌نویس Backend در تیم فناوری اطلاعات و ارتباطات دانشگاه صنعتی شریف،
+              مسئول توسعه و نگهداری سرویس‌های دانشگاهی با استفاده از ASP.NET Core Web API بودم. در این موقعیت،
+               مسئولیت طراحی، توسعه و بهینه‌سازی ماژول‌های مرتبط با مدیریت کاربران، سیستم‌های آموزشی و فرآیندهای داخلی دانشگاه را برعهده داشتم."
+                        point={["پیاده‌سازی و یکپارچه‌سازی SSO (Single Sign-On) دانشگاه با سایر سرویس‌ها جهت احراز هویت متمرکز و امن",
+                            "توسعه APIهای مقیاس‌پذیر با رعایت اصول Clean Architecture و رعایت استانداردهای RESTful",
+                            "کار با سیستم‌های موجود دانشگاهی و اتصال آن‌ها به زیرساخت جدید",
+                            "تجربه عملی با Git، SQL Server، Entity Framework Core، JWT و مدیریت نقش‌ها (Role-Based Access)",
+                            "مشارکت در جلسات تحلیل نیازمندی‌ها، طراحی فنی و پیاده‌سازی DevOps اولیه برای پروژه‌های داخلی",
+                        ]}
+                    />
+                </div>
+
+            </div>
+        </div>
+    );
 };
 
 export default AboutMe;

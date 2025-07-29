@@ -31,7 +31,9 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} font-sans bg-white`}>
         <Navbar />
-        {children}
+        <div className="mt-28">
+            {children}
+        </div>
         <Analytics />
         <SpeedInsights />
         <Footer />

@@ -1,18 +1,19 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { BiLogoJavascript, BiLogoTypescript } from "react-icons/bi";
+import {BiLogoJavascript, BiLogoMicrosoft, BiLogoTypescript} from "react-icons/bi";
 import { FaBootstrap, FaReact } from "react-icons/fa6";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiBlazor } from "react-icons/si";
+import {TbWorldWww} from "react-icons/tb";
+import {PiFileSqlDuotone} from "react-icons/pi";
 
 interface Props {
   icon: string;
   title: string;
-  text: string;
 }
 
-const ServicesBox = ({ icon, title, text }: Props) => {
+const ServicesBox = ({ icon, title }: Props) => {
   const contentRef = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
     // Ensure the ref is not null and code only runs on the client
@@ -52,6 +53,15 @@ const ServicesBox = ({ icon, title, text }: Props) => {
       case "next":
         return <RiNextjsFill className="text-6xl" />;
         break;
+      case "web":
+        return <TbWorldWww className="text-6xl" />;
+        break;
+      case "sql":
+        return <PiFileSqlDuotone className="text-6xl" />;
+        break;
+      case "asp":
+        return <BiLogoMicrosoft className="text-6xl" />;
+        break;
       case "react":
         return <FaReact className="text-6xl" />;
         break;
@@ -76,9 +86,8 @@ const ServicesBox = ({ icon, title, text }: Props) => {
     <div ref={contentRef}>
       <div className="bg-gray-100 p-5 rounded-2xl content-bar h-full opacity-0">
         <div>{iconSelect()}</div>
-        <div className="mt-12">
+        <div className="mt-8">
           <h1 className="text-3xl font-mono">{title}</h1>
-          <p className="text-justify text-base mt-1 ">{text}</p>
         </div>
       </div>
     </div>
