@@ -140,15 +140,15 @@ table {
 
 @font-face {
     font-family: IRANSans;
-    src: url(../fonts/IRANSans/IRANSans.ttf);
-         url(../fonts/IRANSans/IRANSans.woff);
+    src: url(../fonts/IRANSans/IRANSans.ttf),
+         url(../fonts/IRANSans/IRANSans.woff),
          url(../fonts/IRANSans/IRANSans.woff2);
 }
 
 @font-face {
     font-family: IRANSansBold;
-    src: url(../fonts/IRANSans/IRANSans_Bold.ttf);
-         url(../fonts/IRANSans/IRANSans_Bold.woff);
+    src: url(../fonts/IRANSans/IRANSans_Bold.ttf),
+         url(../fonts/IRANSans/IRANSans_Bold.woff),
          url(../fonts/IRANSans/IRANSans_Bold.woff2);
 }
 
