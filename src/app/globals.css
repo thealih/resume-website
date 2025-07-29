@@ -88,13 +88,14 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: var(--primary-font);
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: var(--primary-font);
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -107,133 +108,143 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+    display: block;
 }
+
 body {
-  line-height: 1;
+    line-height: 1;
 }
+
 ol,
 ul {
-  list-style: none;
+    list-style: none;
 }
+
 blockquote,
 q {
-  quotes: none;
+    quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
-  content: none;
+    content: "";
+    content: none;
 }
+
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 @font-face {
-  font-family: IRANSans;
-  src: url(../fonts/IRANSans/IRANSans.ttf);
+    font-family: IRANSans;
+    src: url(../fonts/IRANSans/IRANSans.ttf);
+         url(../fonts/IRANSans/IRANSans.woff);
+         url(../fonts/IRANSans/IRANSans.woff2);
 }
 
 @font-face {
-  font-family: IRANSansBold;
-  src: url(../fonts/IRANSans/IRANSans_Bold.ttf);
+    font-family: IRANSansBold;
+    src: url(../fonts/IRANSans/IRANSans_Bold.ttf);
+         url(../fonts/IRANSans/IRANSans_Bold.woff);
+         url(../fonts/IRANSans/IRANSans_Bold.woff2);
 }
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-  --primary-font: "IRANSans";
-  --font-bold: "IRANSansBold";
-  --primary-color: #5f87f6;
-  --white-color: #ffffff;
-  --black-color: #1a1a1a;
-  --dark-color: #111827;
-  --blue-color: #172554;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+    --primary-font: "IRANSans";
+    --font-bold: "IRANSansBold";
+    --primary-color: #5f87f6;
+    --white-color: #ffffff;
+    --black-color: #1a1a1a;
+    --dark-color: #111827;
+    --blue-color: #172554;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
 }
 
 body {
-  line-height: 1.6;
-  font-size: 1.6rem;
-  font-family: var(--primary-font);
-  direction: rtl;
+    line-height: 1.6;
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+    direction: rtl;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
 }
 
 /* Start Default Styles */
 
 html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-  scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 *,
 *::after,
 *::before {
-  outline: none;
-  box-sizing: inherit;
+    outline: none;
+    box-sizing: inherit;
 }
 
 a {
-  text-decoration: none;
-  color: var(--dark-color);
-  transition: all 400ms ease;
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: all 400ms ease;
 }
 
 a:hover {
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 /* Finish Default Styles */
 
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
+
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+    background: #f1f1f1;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-color);
-  /* border-radius: 20px; */
-  transition: all ease-in-out 0.5s;
+    background: var(--primary-color);
+    /* border-radius: 20px; */
+    transition: all ease-in-out 0.5s;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  /* background: var(--blue-color); */
+    /* background: var(--blue-color); */
 }
 
 .square-animation {
-  animation: square-enter 1.5s forwards;
+    animation: square-enter 1.5s forwards;
 }
 
 @keyframes square-enter {
-  from {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
