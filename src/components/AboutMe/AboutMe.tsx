@@ -48,8 +48,8 @@ const AboutMe: FC = () => {
                     <WorkSection
                         date=" تهران، ایران — 🗓️ از مهر 1403 تا اسفند 1403"
                         src={Logo30Book.src}
-                        width={90}
-                        height={45}
+                        width={75}
+                        height={35}
                         point={["توسعه رابط‌های کاربری با استفاده از Blazor و Razor Components",
                             "طراحی و پیاده‌سازی ساختار ماژولار بر پایه الگوی MVC",
                             "بهینه‌سازی عملکرد صفحات وب و تجربه کاربری (UX)",
