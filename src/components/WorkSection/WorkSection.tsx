@@ -16,7 +16,7 @@ function WorkSection({src, width, height, desc, point, title, date}:
             <div className="flex items-center gap-x-4">
                 <Image src={src} width={width} height={height} alt="لوگو"/>
                 {
-                    title ? <div className="font-bold text-4xl"> {title}  </div> : null
+                    title ? <div className="font-bold text-3xl md:text-4xl leading-normal"> {title}  </div> : null
                 }
             </div>
 
@@ -26,9 +26,11 @@ function WorkSection({src, width, height, desc, point, title, date}:
             </p>
             {
                 point?.length > 0 && (
-                    <div className="font-bold">
-                        نکات کلیدی :
-                        <ul className="list-disc pl-5 mt-6 space-y-2 text-xl text-gray-600">
+                    <div>
+                        <div className="font-bold">
+                            نکات کلیدی :
+                        </div>
+                        <ul className="list-disc mt-6 space-y-2 text-xl text-gray-600 mr-8">
                             {point.map((item, index) => (
                                 <li key={index}>{item}</li>
                             ))}

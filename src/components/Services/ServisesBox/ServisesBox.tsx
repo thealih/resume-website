@@ -1,97 +1,106 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import {useEffect, useRef} from "react";
 import {BiLogoJavascript, BiLogoMicrosoft, BiLogoTypescript} from "react-icons/bi";
-import { FaBootstrap, FaReact } from "react-icons/fa6";
-import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiBlazor } from "react-icons/si";
+import {FaBootstrap, FaDocker, FaReact} from "react-icons/fa6";
+import {RiNextjsFill, RiTailwindCssFill} from "react-icons/ri";
+import {SiBlazor, SiMongodb} from "react-icons/si";
 import {TbWorldWww} from "react-icons/tb";
 import {PiFileSqlDuotone} from "react-icons/pi";
 
 interface Props {
-  icon: string;
-  title: string;
+    icon: string;
+    title: string;
 }
 
-const ServicesBox = ({ icon, title }: Props) => {
-  const contentRef = useRef<HTMLDivElement | null>(null);
-  useEffect(() => {
-    // Ensure the ref is not null and code only runs on the client
-    if (!contentRef.current) return;
+const ServicesBox = ({icon, title}: Props) => {
+    const contentRef = useRef<HTMLDivElement | null>(null);
+    useEffect(() => {
+        // Ensure the ref is not null and code only runs on the client
+        if (!contentRef.current) return;
 
-    // Create the IntersectionObserver instance
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        // Find the ".content-bar" element inside the observed element
-        const progress = entry.target.querySelector(
-          ".content-bar"
-        ) as HTMLElement | null;
+        // Create the IntersectionObserver instance
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                // Find the ".content-bar" element inside the observed element
+                const progress = entry.target.querySelector(
+                    ".content-bar"
+                ) as HTMLElement | null;
 
-        if (!progress) return; // Skip if the element is not found
+                if (!progress) return; // Skip if the element is not found
 
-        if (entry.isIntersecting) {
-          progress.classList.add("square-animation");
-        } else {
-          // progress.classList.remove("square-animation");
+                if (entry.isIntersecting) {
+                    progress.classList.add("square-animation");
+                } else {
+                    // progress.classList.remove("square-animation");
+                }
+            });
+        });
+
+        // Start observing the element
+        observer.observe(contentRef.current);
+
+        // Clean up the observer when the component unmounts
+        return () => {
+            if (contentRef.current) {
+                observer.unobserve(contentRef.current);
+            }
+        };
+    }, []);
+
+    function iconSelect() {
+        switch (icon) {
+            case "next":
+                return <RiNextjsFill className="text-6xl"/>;
+                break;
+            case "web":
+                return <TbWorldWww className="text-6xl"/>;
+                break;
+            case "sql":
+                return <PiFileSqlDuotone className="text-6xl"/>;
+                break;
+            case "mongo":
+                return <SiMongodb className="text-6xl"/>;
+                break;
+            case "docker":
+                return <FaDocker  className="text-6xl"/>;
+                break;
+            case "asp":
+                return <BiLogoMicrosoft className="text-6xl"/>;
+                break;
+            case "react":
+                return <FaReact className="text-6xl"/>;
+                break;
+            case "typescript":
+                return <BiLogoTypescript className="text-6xl"/>;
+                break;
+            case "tailwind":
+                return <RiTailwindCssFill className="text-6xl"/>;
+                break;
+            case "bootstrap":
+                return <FaBootstrap className="text-6xl"/>;
+                break;
+            case "blazor":
+                return <SiBlazor className="text-6xl"/>;
+                break;
+            default:
+                return <BiLogoJavascript className="text-6xl"/>;
         }
-      });
-    });
-
-    // Start observing the element
-    observer.observe(contentRef.current);
-
-    // Clean up the observer when the component unmounts
-    return () => {
-      if (contentRef.current) {
-        observer.unobserve(contentRef.current);
-      }
-    };
-  }, []);
-
-  function iconSelect() {
-    switch (icon) {
-      case "next":
-        return <RiNextjsFill className="text-6xl" />;
-        break;
-      case "web":
-        return <TbWorldWww className="text-6xl" />;
-        break;
-      case "sql":
-        return <PiFileSqlDuotone className="text-6xl" />;
-        break;
-      case "asp":
-        return <BiLogoMicrosoft className="text-6xl" />;
-        break;
-      case "react":
-        return <FaReact className="text-6xl" />;
-        break;
-      case "typescript":
-        return <BiLogoTypescript className="text-6xl" />;
-        break;
-      case "tailwind":
-        return <RiTailwindCssFill className="text-6xl" />;
-        break;
-      case "bootstrap":
-        return <FaBootstrap className="text-6xl" />;
-        break;
-      case "blazor":
-        return <SiBlazor className="text-6xl" />;
-        break;
-      default:
-        return <BiLogoJavascript className="text-6xl" />;
     }
-  }
 
-  return (
-    <div ref={contentRef}>
-      <div className="bg-gray-100 p-5 rounded-2xl content-bar h-full opacity-0">
-        <div>{iconSelect()}</div>
-        <div className="mt-8">
-          <h1 className="text-3xl font-mono">{title}</h1>
+    return (
+        <div ref={contentRef}>
+            <div className="bg-gray-100 p-5 rounded-2xl content-bar h-full opacity-0 ">
+                <div className="2xl:flex 2xl:items-center 2xl:justify-between flex-wrap gap-y-10">
+                    <div>{iconSelect()}</div>
+                    <div className="text-end mt-10 2xl:mt-0">
+                        <h1 className="text-3xl font-mono">{title}</h1>
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default ServicesBox;

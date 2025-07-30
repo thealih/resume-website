@@ -9,7 +9,7 @@ const Services: FC = () => {
       </h1>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10 mt-10 md:gap-x-20 lg:grid-cols-6">
         <ServicesBox
-            title="WebApi"
+            title="Web Api"
             icon="web"
         />
         <ServicesBox
@@ -19,6 +19,14 @@ const Services: FC = () => {
         <ServicesBox
             title="SQL Server"
             icon="sql"
+        />
+        <ServicesBox
+            title="MongoDB"
+            icon="mongo"
+        />
+        <ServicesBox
+            title="Docker"
+            icon="docker"
         />
         <ServicesBox
           title="Blazor"

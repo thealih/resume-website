@@ -68,14 +68,16 @@ const Landing: FC = () => {
           برنامه نویس
         </h1>
         <h2 className="text-5xl font-mono leading-relaxed">ساکن در تهران</h2>
-        <div className="text-gray-500 text-lg mt-20 ">
+        <div className="text-gray-500 mt-20 ">
           <p className="text-xl">راه های ارتباطی</p>
           <div className="grid grid-cols-12 my-10 gap-x-10 items-center ">
             <Link
               href={"tel:09912507897"}
               className="bg-blue-800 text-white p-6  rounded-full col-span-5 lg:col-span-3 text-center hover:text-gray-100"
             >
-              تماس با من
+              <div className="text-2xl">
+                تماس با من
+              </div>
             </Link>
             <Link href={"https://t.me/TheAli_H6"} target="_blank">
               <FaTelegram className="text-4xl ml-1 text-gray-500  hover:text-black ease-in-out duration-500" />
